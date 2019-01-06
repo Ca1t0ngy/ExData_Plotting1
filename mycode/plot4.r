@@ -34,7 +34,7 @@ data <- mutate(data, Date_time = dmy_hms(data$Date_time))
 
 # plot parameter
 
-png(file = "plot4.png")
+png(file = "plot4.png", width = 480, height = 480)
 attach(mtcars)
 par(mfrow=c(2,2))
 

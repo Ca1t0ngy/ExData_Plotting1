@@ -33,7 +33,7 @@ data <- mutate(data, Date_time = paste(data$Date,data$Time))
 data <- mutate(data, Date_time = dmy_hms(data$Date_time))
 
 # plot 
-png(file = "plot2.png")
+png(file = "plot2.png", width = 480, height = 480)
 with(data, plot(Date_time, Global_active_power, "l", xlab = "", ylab = 
                         "Global Active Power (kilowatts)"))
 dev.off()
